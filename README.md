@@ -18,6 +18,16 @@
 *   **Database:** PostgreSQL (DBeaver)
 *   **BI-Tools:** Power BI Desktop (DAX, Power Query)
 *   **Language:** SQL (DQL, DDL)
+*   **Приклад Power BI інтерфейсу**
+*   P.S: Ви завжди можете завантажити файл з папки 'Dashboard' та перевірити інтерактивність за допомогою Power BI Desktop
+<img width="587" height="334" alt="image" src="https://github.com/user-attachments/assets/839fabd3-792c-4f7f-bdb4-fc4d7b1de786" />
+<img width="587" height="333" alt="image" src="https://github.com/user-attachments/assets/d9a1f19f-12c1-4dae-adbc-5ba6aa495ab7" />
+<img width="583" height="334" alt="image" src="https://github.com/user-attachments/assets/171b06f1-c61d-4588-b429-011ec088b8b9" />
+<img width="587" height="333" alt="image" src="https://github.com/user-attachments/assets/aa06da00-7ea0-4537-aa1d-0505cf72ba10" />
+
+
+
+
 
 ---
 
