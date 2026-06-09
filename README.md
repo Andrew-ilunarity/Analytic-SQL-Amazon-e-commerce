@@ -27,8 +27,10 @@
 Для синхронізації даних та обробки змішаних форматів дат (`DD.MM.YYYY` та `MM-DD-YY`) було використано таку логіку:
 
 ```sql
+--VIEW для синхронізації з Power BI--
 CREATE OR REPLACE VIEW sync_pbi_script_3_set_delta AS
 SELECT 
+--Логіка перетворення формату дати--
     to_char(
         CASE 
             WHEN ps."Date" LIKE '%.%' THEN to_date(ps."Date", 'DD.MM.YY')
@@ -42,6 +44,7 @@ SELECT
     SUM(ps."Amount" - (pc.production_cost + pc.delivery_cost)) AS "Profit"
 FROM product_sales ps 
 INNER JOIN product_cost pc ON ps."Category" = pc.category  
+--Умови роботи з базою--
 WHERE ps."Status" IN ('Shipped - Delivered to Buyer', 'Shipped')
   AND ps."Amount" IS NOT NULL 
   AND ps."Category" LIKE 'Set'
